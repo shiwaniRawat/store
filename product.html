@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../storemanagement/css/nav.css">
+    <link rel="stylesheet" href="../storemanagement/css/product.css">
+    <!-- <link rel="stylesheet" href="../storemanagement/css/order.css"> -->
+
+
+
+    
+</head>
+<body>
+    
+        <div class="topbar">
+            <div class="topbar_left">
+                <div class="logo">
+                    <img src="../storemanagement/assect/logo.58169365.png" alt="Logo">
+                    <p class="name">Kafene</p>
+                </div>
+                <nav>
+                    <a class="menu_item " href="../storemanagement/order.html">Orders</a>
+                    <a class="menu_item active" href="../storemanagement/product.html">Products</a>
+                    <a class="menu_item " href="../storemanagement/user.html">Users</a>
+                 </nav>
+            </div>
+        </div>
+        <main class="loginpage_section">
+            <div class="homePage-wrapper">
+                <h1 class="homePage-main-heading">
+                    Products
+                </h1>
+            <div class="homePage-order-wrapper">
+                <div class="homePage-filter-wrapper">
+                    <h3>Filters</h3>
+                    <div class="homepage-filter-options">
+                        <p>Count: 100</p>
+                        <label class="homePage-filter-checkBx">
+                            <input id="expired" type="checkbox" name="orders-new" >Expired</label>
+                        <label class="homePage-filter-checkBx">
+                            <input id="low" type="checkbox" name="orders-packed" >Low Stock</label>
+                        
+                    </div>
+                </div>
+                
+                <div class="content-wrapper">
+                    <table class="homePage-order-table">
+                        <tr><th>ID</th>
+                            <th>Product Name</th>
+                            <th>Product Brand</th>
+                            <th >Expiry Date</th>
+                            <th>Unit Price</th>
+                            <th style="min-width: 100px;">Stock</th></tr>
+                        <tbody id="product-data">
+                            
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+          </div>
+        </main>
+
+    
+    <script src="../storemanagement/js/product.js"></script>
+</body>
+</html>
